@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+.venv/
+venv/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Learner-generated evidence and data
+artifacts/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+*.mp4
+*.mov
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+secrets/

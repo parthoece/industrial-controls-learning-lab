@@ -1,0 +1,41 @@
+name: Learning lab proposal
+description: Propose a small reproducible learning experiment
+title: "[Lab proposal]: "
+labels: ["type: proposal", "type: experiment"]
+body:
+  - type: input
+    id: outcome
+    attributes:
+      label: Learning outcome
+      placeholder: Learner can observe integral windup during saturation
+    validations:
+      required: true
+  - type: textarea
+    id: baseline
+    attributes:
+      label: Minimal baseline
+      description: Describe the smallest runnable example.
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: Failure or diagnostic case
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Expected evidence
+      description: Measurements, diagrams, tests, or tables the learner should produce.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope confirmation
+      options:
+        - label: The proposal is simulation-first or clearly identifies hardware requirements.
+          required: true
+        - label: The proposal does not claim functional safety.
+          required: true

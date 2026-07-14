@@ -1,0 +1,23 @@
+name: Learning question
+description: Ask for clarification about a concept or lab
+title: "[Question]: "
+labels: ["question"]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic and file
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: What have you tried or read?
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Specific question
+    validations:
+      required: true

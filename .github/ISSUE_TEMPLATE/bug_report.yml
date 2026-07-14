@@ -1,0 +1,38 @@
+name: Bug report
+description: Report incorrect behavior in code, tests, or repository tooling
+title: "[Bug]: "
+labels: ["type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you. Do not use this form for security or hazardous-motion reports; follow SECURITY.md.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Include commands, parameters, sample time, platform, and minimal data.
+    validations:
+      required: true
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      options:
+        - Python mini-lab
+        - Structured Text example
+        - Documentation or diagram
+        - CI or repository tooling
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Paste concise logs, measurements, or a failing test.

@@ -1,0 +1,10 @@
+TYPE E_MotionBlockReason :
+(
+    NONE := 0,
+    EMERGENCY_STOP_ACTIVE := 10,
+    GUARD_OPEN := 20,
+    NETWORK_UNHEALTHY := 30,
+    DRIVE_FAULT := 40,
+    EXTERNAL_PERMISSION_MISSING := 50
+);
+END_TYPE

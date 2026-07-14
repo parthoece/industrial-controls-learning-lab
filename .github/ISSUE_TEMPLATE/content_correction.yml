@@ -1,0 +1,28 @@
+name: Content correction
+description: Correct an explanation, term, diagram, or reference
+title: "[Content]: "
+labels: ["type: documentation"]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: File or section
+      placeholder: docs/06-glossary.md — Jitter
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is unclear or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting primary or official sources
