@@ -1,17 +1,35 @@
 cff-version: 1.2.0
-message: "If this learning lab supports your work, cite the repository and release used."
-title: "Industrial Controls Learning Lab"
+message: >-
+  If this learning lab supports your work, please cite the repository
+  and the release used.
+title: Industrial Controls Learning Lab
 type: software
+
 authors:
-  - name: "Industrial Controls Learning Lab contributors"
+  - given-names: Partho
+    family-names: Adhikari
+
 version: 0.1.0
 date-released: 2026-07-14
+
+abstract: >-
+  A simulation-first, open-source learning environment for software
+  engineers studying control systems, machine control, industrial motion,
+  cyclic controller software, and smart manufacturing.
+
 license: Apache-2.0
-repository-code: "https://github.com/parthoece/industrial-controls-learning-lab"
-url: "https://github.com/parthoece/industrial-controls-learning-lab.git"
+
+repository-code: >-
+  https://github.com/parthoece/industrial-controls-learning-lab
+url: >-
+  https://github.com/parthoece/industrial-controls-learning-lab
+
 keywords:
   - control systems
   - motion control
   - industrial automation
+  - PLC
+  - EtherCAT
   - smart manufacturing
-  - education
+  - control software
+  - engineering education

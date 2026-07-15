@@ -5,7 +5,7 @@ Replace the placeholders before publishing.
 | Role | Name | GitHub | Contact |
 | --- | --- | --- | --- |
 | Lead maintainer | `Partho Adhikari` | `@parthoece` | `parthoece23@gmail.com` |
-| Security contact | `YOUR_NAME` | private | `parthoece23@gmail.com` |
+| Security contact | `Partho Adhikari` | private | `parthoece23@gmail.com` |
 
 ## Publication checklist
 
