@@ -1,22 +1,12 @@
-# Module 5 — Smart Manufacturing Software
+# Module 5 — Smart manufacturing software
 
-## Required topics
+## Lessons
 
-- field, control, supervisory, operations, and enterprise layers
-- OT/IT ownership and trust boundaries
-- OPC UA, MQTT, and REST roles
-- asset, recipe, work order, part, cycle, alarm, and measurement models
-- SQL schema design and indexes
-- events versus current state
-- traceability and idempotency
-- OEE assumptions
-- health checks, logs, metrics, audit trail, and configuration
-- least privilege, network segmentation, secrets, patching, and backups
+- [Week 14 Factory Information Layers](../learning/week-14-factory-information-layers.md)
+- [Week 15 Industrial Integration](../learning/week-15-industrial-integration.md)
+- [Week 16 Sql Traceability](../learning/week-16-sql-traceability.md)
+- [Week 17 Oee Observability Security](../learning/week-17-oee-observability-security.md)
 
-## Labs
+## Completion rule
 
-- record part events and reconstruct a part history
-- calculate OEE from explicit assumptions
-- sketch a relational schema and queries
-- compare protocol choices for status, commands, and events
-- document retention, retry, duplicate, and outage behavior
+Complete the knowledge checks, linked lab or design exercise, and module review before proceeding.

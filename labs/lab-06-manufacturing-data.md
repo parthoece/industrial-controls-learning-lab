@@ -21,3 +21,19 @@ python -m industrial_controls_lab run manufacturing
 ## Evidence
 
 Show the formula inputs, result, event schema, duplicate policy, and one reconstructed part history.
+
+## Prerequisites
+
+- Weeks 16–17
+- Read [Week 16 Sql Traceability](../learning/week-16-sql-traceability.md)
+- Install the development environment
+
+## Acceptance criteria
+
+- OEE inputs are explicit; duplicate event ID is rejected; ordered part history is reconstructed.
+- Evidence includes normal, boundary, and failure cases.
+- Assumptions, units, sample time, and limitations are recorded.
+
+## Report
+
+Use [`templates/experiment-report.md`](../templates/experiment-report.md).

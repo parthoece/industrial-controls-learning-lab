@@ -21,3 +21,19 @@ python -m industrial_controls_lab run pid
 ## Evidence
 
 Report rise time, overshoot, settling time, steady-state error, RMS error, saturation duration, and gain choices.
+
+## Prerequisites
+
+- Weeks 2–3
+- Read [Week 03 Discrete Pid](../learning/week-03-discrete-pid.md)
+- Install the development environment
+
+## Acceptance criteria
+
+- Controller tracks the setpoint; output remains within limits; anti-windup recovery is explained.
+- Evidence includes normal, boundary, and failure cases.
+- Assumptions, units, sample time, and limitations are recorded.
+
+## Report
+
+Use [`templates/experiment-report.md`](../templates/experiment-report.md).

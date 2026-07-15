@@ -1,10 +1,5 @@
-# Structured Text Examples
+# Progress
 
-These examples use IEC 61131-3-style Structured Text and avoid vendor-library calls where possible. They are educational templates, not production or safety logic.
+The committed tracker is a reusable starting point. Learners can update it in a fork, personal branch, or copied portfolio repository.
 
-- `E_EquipmentState.st` — explicit state enumeration
-- `E_MotionBlockReason.st` — observable permission reason
-- `FB_MotionPermission.st` — first-failure permission evaluation
-- `FB_EquipmentStateMachine.st` — command/state/fault separation
-
-Before using any example in a PLC environment, adapt types, edge detection, library conventions, task timing, and diagnostics to the selected platform.
+Do not merge personal claims into the upstream project unless they are part of a contributed example with reproducible evidence.

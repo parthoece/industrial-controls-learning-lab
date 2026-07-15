@@ -1,23 +1,14 @@
-# Manufacturing Data Flow
+# Manufacturing data flow
 
 ```mermaid
 flowchart LR
-    CELL[Machine / simulated cell]
-    EDGE[Edge adapter]
-    BROKER[OPC UA or MQTT integration]
-    STORE[(Event and time-series storage)]
-    API[Application API]
-    UI[Dashboard / operations UI]
-    MES[MES / production systems]
-
-    CELL -->|state, alarms, samples| EDGE
-    EDGE --> BROKER
-    EDGE --> STORE
-    BROKER --> STORE
-    STORE --> API
-    API --> UI
-    API <--> MES
-    MES -->|work order / recipe intent| EDGE
+    CTRL[Controller] --> EDGE[Adapter / edge service]
+    EDGE --> EVENTS[Event stream]
+    EDGE --> STATE[Current state]
+    EVENTS --> DB[(Event and production DB)]
+    STATE --> HMI[HMI / dashboard]
+    DB --> API[Read API]
+    API --> MES[MES / analytics]
+    MES --> ORDER[Validated work and recipe intent]
+    ORDER --> CTRL
 ```
-
-Commands, events, current state, and measurements should use different contracts. Production intent must be validated at the machine boundary before it becomes motion.

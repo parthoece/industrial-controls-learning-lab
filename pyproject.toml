@@ -5,12 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "industrial-controls-learning-lab"
 version = "0.1.0"
-description = "Fundamentals-first learning labs for control, motion, PC-based automation, and smart manufacturing"
+description = "Self-contained fundamentals lessons and simulation labs for industrial controls and smart manufacturing"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "Apache-2.0" }
-authors = [{ name = "Industrial Controls Learning Lab contributors" }]
-keywords = ["control-systems", "motion-control", "industrial-automation", "smart-manufacturing", "education"]
+authors = [{ name = "Partho Adhikari" }]
+keywords = ["control-systems", "motion-control", "plc", "ethercat", "industrial-automation", "smart-manufacturing", "education"]
 classifiers = [
   "Development Status :: 3 - Alpha",
   "Intended Audience :: Education",
@@ -29,8 +29,9 @@ dev = ["pytest>=8"]
 industrial-controls-lab = "industrial_controls_lab.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/YOUR_GITHUB_HANDLE/industrial-controls-learning-lab"
-Issues = "https://github.com/YOUR_GITHUB_HANDLE/industrial-controls-learning-lab/issues"
+Homepage = "https://github.com/parthoece/industrial-controls-learning-lab"
+Documentation = "https://github.com/parthoece/industrial-controls-learning-lab/tree/main/learning"
+Issues = "https://github.com/parthoece/industrial-controls-learning-lab/issues"
 
 [tool.setuptools.packages.find]
 where = ["src"]

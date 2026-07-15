@@ -1,24 +1,11 @@
-# Module 2 — PLC and Machine Control
+# Module 2 — PLC and machine control
 
-## Required topics
+## Lessons
 
-- IEC 61131-3 organization and Structured Text syntax
-- cyclic scan behavior
-- functions, function blocks, programs, data types, and global data
-- equipment state versus operating mode
-- rising-edge command handling
-- interlocks and reason codes
-- alarm latching, acknowledgement, reset, and recovery
-- diagnostics designed for operators and technicians
+- [Week 04 Plc Scan Structured Text](../learning/week-04-plc-scan-structured-text.md)
+- [Week 05 Equipment States Modes](../learning/week-05-equipment-states-modes.md)
+- [Week 06 Interlocks Alarms Recovery](../learning/week-06-interlocks-alarms-recovery.md)
 
-## Labs
+## Completion rule
 
-- IDLE/READY/RUNNING/STOPPING/FAULT state machine
-- manual/automatic mode arbitration
-- motion-permission function block
-- fault latch and controlled reset
-- sequence timeout with diagnostic reason
-
-## Design rule
-
-A learner should be able to answer “why is the machine in this state?” using observable values rather than code inspection alone.
+Complete the knowledge checks, linked lab or design exercise, and module review before proceeding.

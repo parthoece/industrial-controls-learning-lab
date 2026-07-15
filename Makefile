@@ -12,6 +12,7 @@ labs:
 	python -m industrial_controls_lab run pid
 	python -m industrial_controls_lab run machine
 	python -m industrial_controls_lab run motion
+	python -m industrial_controls_lab run timing
 	python -m industrial_controls_lab run manufacturing
 
 check:

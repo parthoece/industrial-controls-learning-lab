@@ -21,3 +21,19 @@ python -m industrial_controls_lab run motion
 ## Evidence
 
 Record profile duration, peak velocity, target error, drive transitions, and the first failed layer in each fault scenario.
+
+## Prerequisites
+
+- Weeks 9–10
+- Read [Week 10 Motion Profiles Homing](../learning/week-10-motion-profiles-homing.md)
+- Install the development environment
+
+## Acceptance criteria
+
+- Profile reaches target; velocity/acceleration limits are respected; fault reset requires cause clear.
+- Evidence includes normal, boundary, and failure cases.
+- Assumptions, units, sample time, and limitations are recorded.
+
+## Report
+
+Use [`templates/experiment-report.md`](../templates/experiment-report.md).

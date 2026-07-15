@@ -1,21 +1,28 @@
-# Security Policy
+# Security policy
 
 ## Supported version
 
-Security and safety-related corrections are applied to the latest `main` branch.
+Security and safety-related corrections are applied to the latest `main` branch and latest tagged release when one exists.
 
-## Reporting
+## Private reporting
 
-Do not open a public issue for vulnerabilities, exposed credentials, unsafe operational behavior, or instructions that could create hazardous motion.
+Do not open a public issue for:
 
-Before publishing, replace this address with a monitored private contact:
+- vulnerabilities
+- exposed credentials
+- unsafe operational behavior
+- instructions that could create hazardous motion
 
-```text
-SECURITY_CONTACT@example.com
-```
+Report privately to `parthoece23@gmail.com` or use GitHub private vulnerability reporting when enabled.
 
-Include the affected component, reproduction steps, potential impact, and suggested mitigation when available.
+Include:
+
+- affected component
+- version or commit
+- reproduction steps
+- possible impact
+- suggested mitigation, when known
 
 ## Operational boundary
 
-This repository is simulation-first and unsuitable for direct machinery control. Real deployments require independent safety engineering, risk assessment, safety-rated hardware and logic, controlled commissioning, vendor review, and compliance with applicable requirements.
+Simulation-first. Unsuitable for direct machinery control. Real deployments require independent safety engineering, risk assessment, safety-rated hardware and logic, controlled commissioning, vendor review, and applicable compliance.

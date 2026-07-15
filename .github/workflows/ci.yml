@@ -31,8 +31,5 @@ jobs:
         run: pytest
       - name: Repository checks
         run: python scripts/check_repo.py
-      - name: Smoke test mini-labs
-        run: |
-          python -m industrial_controls_lab run plant
-          python -m industrial_controls_lab run machine
-          python -m industrial_controls_lab run manufacturing
+      - name: Smoke test all mini-labs
+        run: make labs

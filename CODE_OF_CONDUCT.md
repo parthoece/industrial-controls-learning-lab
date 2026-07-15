@@ -60,8 +60,7 @@ representative at an online or offline event.
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-`MAINTAINER_CONTACT@example.com`. Replace this placeholder with a
-monitored private contact before publishing the repository. All complaints will
+`parthoece23@gmail.com`. Reports are reviewed privately and fairly. All complaints will
 be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the

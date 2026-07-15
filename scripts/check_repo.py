@@ -18,6 +18,8 @@ REQUIRED = [
     "MAINTAINERS.md",
     "CHANGELOG.md",
     "CITATION.cff",
+    "learning/README.md",
+    "learning/references/deep-study.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
     ".github/workflows/ci.yml",
 ]
@@ -52,7 +54,6 @@ def check_relative_links() -> list[str]:
 
 
 def check_for_generated_files() -> list[str]:
-    """Check tracked files only; local test caches may exist during CI."""
     try:
         result = subprocess.run(
             ["git", "ls-files"],
@@ -72,14 +73,30 @@ def check_for_generated_files() -> list[str]:
     ]
 
 
+def check_curriculum_counts() -> list[str]:
+    errors: list[str] = []
+    lessons = list((ROOT / "learning").glob("week-*.md"))
+    reviews = list((ROOT / "learning" / "reviews").glob("module-*-review.md"))
+    if len(lessons) != 18:
+        errors.append(f"expected 18 weekly lessons, found {len(lessons)}")
+    if len(reviews) != 6:
+        errors.append(f"expected 6 module reviews, found {len(reviews)}")
+    return errors
+
+
 def main() -> int:
-    errors = check_required_files() + check_relative_links() + check_for_generated_files()
+    errors = (
+        check_required_files()
+        + check_relative_links()
+        + check_for_generated_files()
+        + check_curriculum_counts()
+    )
     if errors:
         print("Repository checks failed:")
         for error in errors:
             print(f"- {error}")
         return 1
-    print("Repository structure and relative links are valid.")
+    print("Repository structure, curriculum, and relative links are valid.")
     return 0
 
 

@@ -39,6 +39,9 @@ python scripts/check_repo.py
 
 ## Content expectations
 
+Follow the [curriculum authoring guide](docs/09-curriculum-authoring-guide.md).
+
+
 Every learning contribution should answer:
 
 1. What problem does this concept solve?

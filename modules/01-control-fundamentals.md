@@ -1,23 +1,11 @@
-# Module 1 — Control Fundamentals
+# Module 1 — Control fundamentals
 
-## Required topics
+## Lessons
 
-1. signals, units, coordinates, sample time, and aliasing intuition
-2. first- and second-order model intuition
-3. open-loop and closed-loop control
-4. rise time, overshoot, settling time, steady-state error, RMS error
-5. proportional, integral, and derivative action
-6. saturation, windup, anti-windup, derivative noise, and delay
-7. repeatable tuning and experiment logs
+- [Week 01 Units Sampling First Order](../learning/week-01-units-sampling-first-order.md)
+- [Week 02 Feedback Response Metrics](../learning/week-02-feedback-response-metrics.md)
+- [Week 03 Discrete Pid](../learning/week-03-discrete-pid.md)
 
-## Labs
+## Completion rule
 
-- simulate a first-order plant
-- compare disturbance rejection with and without feedback
-- tune P, PI, and PID variants
-- force output saturation and observe windup
-- vary sample time and measurement noise
-
-## Evidence
-
-Publish assumptions, units, controller gains, input scenarios, measurements, limitations, and enough code to reproduce the result.
+Complete the knowledge checks, linked lab or design exercise, and module review before proceeding.

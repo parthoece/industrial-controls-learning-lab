@@ -1,18 +1,18 @@
-# Axis Troubleshooting Flow
+# Axis troubleshooting flow
 
 ```mermaid
 flowchart TD
-    A[Axis does not move] --> B{Permission and interlocks healthy?}
-    B -- No --> B1[Inspect E-stop/guard simulation, limits, mode, external permission]
-    B -- Yes --> C{Network/process data healthy?}
-    C -- No --> C1[Inspect topology, state, working counter, mapping, timing]
-    C -- Yes --> D{Drive operation enabled?}
-    D -- No --> D1[Decode statusword/state, fault, reset preconditions]
-    D -- Yes --> E{Axis configured and referenced?}
-    E -- No --> E1[Inspect mapping, homing, coordinate validity, soft limits]
-    E -- Yes --> F{Command lifecycle correct?}
-    F -- No --> F1[Inspect execute edge, busy/done/error/aborted, state permission]
-    F -- Yes --> G[Inspect plant/mechanics/model, feedback, tuning, command limits]
+    A[Motion blocked or failed] --> P{Machine permission?}
+    P -- No --> PR[Read primary block reason]
+    P -- Yes --> N{Network healthy and fresh?}
+    N -- No --> ND[Check topology, state, counters, mapping]
+    N -- Yes --> D{Drive operation enabled?}
+    D -- No --> DD[Decode statusword and fault]
+    D -- Yes --> X{Axis coordinate valid?}
+    X -- No --> XD[Check homing, encoder, limits]
+    X -- Yes --> C{Command accepted and busy?}
+    C -- No --> CD[Check lifecycle and target validation]
+    C -- Yes --> M{Physical progress?}
+    M -- No --> MD[Check mechanics, feedback, torque, model]
+    M -- Yes --> E[Measure target error and completion]
 ```
-
-Use a layered order rather than changing random PLC variables. Record the first failed layer and the evidence used to reach that conclusion.

@@ -1,0 +1,59 @@
+name: Project proposal
+description: Propose a significant architecture, curriculum, tooling, or policy change
+title: "[Proposal]: "
+labels: ["type: proposal"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Proposal area
+      options:
+        - Software architecture or public interface
+        - Curriculum structure
+        - Repository tooling or CI
+        - Documentation structure
+        - Governance or project policy
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What limitation, inconsistency, or unmet need does this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest practical change.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+  - type: textarea
+    id: impact
+    attributes:
+      label: Compatibility and maintenance impact
+      description: Identify affected users, files, interfaces, documentation, and tests.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will the project verify the proposal?
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I searched existing issues and pull requests.
+          required: true
+        - label: I identified safety, compatibility, and migration implications.
+          required: true

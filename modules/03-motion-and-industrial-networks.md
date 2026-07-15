@@ -1,26 +1,12 @@
-# Module 3 — Motion and Industrial Networks
+# Module 3 — Motion and industrial networks
 
-## Required topics
+## Lessons
 
-- axis, drive, motor, encoder, mechanics, and coordinate systems
-- homing and position validity
-- hard, soft, and command limits
-- velocity- and acceleration-limited profiles
-- PLCopen-style execute/busy/done/error/aborted lifecycle
-- EtherCAT topology, state, process data, working counter, and distributed-clock purpose
-- CiA 402 controlword/statusword and main states
-- single-axis and group-level diagnostics
+- [Week 07 Industrial Networks](../learning/week-07-industrial-networks.md)
+- [Week 08 Ethercat](../learning/week-08-ethercat.md)
+- [Week 09 Cia402](../learning/week-09-cia402.md)
+- [Week 10 Motion Profiles Homing](../learning/week-10-motion-profiles-homing.md)
 
-## Labs
+## Completion rule
 
-- trapezoidal profile generator
-- CiA 402-inspired drive-state model
-- homing and limit test plan
-- XY automatic-sequence diagram
-- injected bus, drive, invalid-target, and timeout faults
-
-## Debugging order
-
-```text
-permission → network → drive state → axis state → command lifecycle → mechanics/model
-```
+Complete the knowledge checks, linked lab or design exercise, and module review before proceeding.

@@ -1,15 +1,25 @@
 # Changelog
 
-Notable changes are documented here. The project follows a human-readable release history; the first tagged public release may begin at `v0.1.0`.
+Notable changes are documented here.
 
 ## Unreleased
 
 ### Added
 
-- 18-week fundamentals-first learning path
-- role maps for control, motion-controller, and manufacturing-software roles
-- six runnable Python mini-labs with automated tests
-- Structured Text examples
-- Mermaid architecture and troubleshooting diagrams
-- future capstone repository handoff
-- open-source community, governance, security, and CI files
+- 18 self-contained weekly fundamentals lessons
+- six module reviews with answer keys
+- curated deep-study reference guide
+- original Mermaid architecture and troubleshooting diagrams
+- enhanced lab acceptance criteria and source/test links
+- curriculum integrity tests
+- general project proposal issue form
+
+### Changed
+
+- root README redesigned as a concise project entry point
+- package URLs and maintainer metadata completed
+- Makefile runs all six labs
+
+## 0.1.0 — pending
+
+The first tagged public release will establish the initial curriculum and simulation-lab baseline.
